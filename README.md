@@ -6,7 +6,8 @@ Dropseed Child Theme Starter is a simple starting point for the development of W
 
 1. Download the package and add the `dist` (src if you want decompressed files) to your `/wp-content/themes` directory.
 2. Change the name of the folder to your desired child theme name.
-3. In `style.css`, change the `Template:` value to your parent theme's folder name.
+3. In `style.css`, change the `Template:` value to your parent theme's folder name. Also, add your associated organization information.
+4. Modify `/lib/dashboard.php` to include your organization's name and link in the footer.
 4. Add your `screenshot.png` file to your child theme's topmost directory.
 5. In `/images/favicons` include favicons generated at [realfavicongenerator](http://realfavicongenerator.net) if desired. If not, you can comment out the favicon implementation in `functions.php` as follows:
 
