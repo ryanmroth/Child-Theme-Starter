@@ -25,6 +25,5 @@ function dropseed_launch() {
   add_action( 'wp_head', 'dropseed_remove_recent_comments_style', 1 );
   add_filter( 'gallery_style', 'dropseed_gallery_style' );
   add_filter( 'the_content', 'dropseed_filter_ptags_on_images' );
-  add_filter( 'excerpt_more', 'dropseed_excerpt_more' );
 }
 add_action( 'after_setup_theme', 'dropseed_launch' );
