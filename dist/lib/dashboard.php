@@ -11,7 +11,7 @@ which customize the Wordpress dashboard.
 
 // Customize dashboard footer information
 function dropseed_modify_admin_footer() {
-  echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Developed by <a href="https://dropseedsolutions.com" target="_blank">Dropseed Solutions</a> ';
+  echo 'Fueled by <a href="http://www.wordpress.org" target="_blank">WordPress</a> | Developed by <a href="https://yourdomain.com" target="_blank">Your Company Name</a> ';
 }
 add_filter('admin_footer_text', 'dropseed_modify_admin_footer');
 
