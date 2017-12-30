@@ -6,7 +6,7 @@
 /* Customize the background of the login screen. Using a random image from Unsplash here. */
 body.login {
 background: #fff url(https://unsplash.it/2560/?random) no-repeat fixed center !important;
-background-size:cover!important;
+background-size:contain!important;
 }
 
 /* Customize the links. */
