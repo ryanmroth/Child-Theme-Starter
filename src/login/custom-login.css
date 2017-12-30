@@ -6,7 +6,7 @@
 /* Customize the background of the login screen. Using a random image from Unsplash here. */
 body.login {
 background: #fff url(https://unsplash.it/2560/?random) no-repeat fixed center !important;
-background-size:contain!important;
+background-size:cover!important;
 }
 
 /* Customize the links. */
@@ -35,6 +35,7 @@ body.login a:focus {
 /* Customize the login logo. */
 body.login div#login h1 a {
   background-image: url('images/login-logo.svg');
+  background-size: contain;
 }
 
 /* Some character for the box elements. */
