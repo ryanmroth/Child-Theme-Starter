@@ -35,9 +35,12 @@ function dropseed_add_contact_methods( $contact_methods ) {
 add_filter('user_contactmethods','dropseed_add_contact_methods',10,1);
 
 // Hide admin bar for non-admins
-if (!current_user_can('manage_options')) {
-  add_filter('show_admin_bar','__return_false');
+function dropseed_hide_admin_bar() {
+  if (!current_user_can('administrator') && !is_admin()) {
+    show_admin_bar(false);
+  }
 }
+add_action('after_setup_theme', 'dropseed_hide_admin_bar');
 
 // Hide WordPress update notification from all non-admins
 function dropseed_hide_update_notice() {
@@ -46,3 +49,6 @@ function dropseed_hide_update_notice() {
     }
 }
 add_action( 'admin_head', 'dropseed_hide_update_notice', 1 );
+
+// Remove Welcome to Wordpress! panel
+remove_action('welcome_panel', 'wp_welcome_panel');

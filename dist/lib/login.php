@@ -34,4 +34,4 @@ function dropseed_login_shake() {
 add_action('login_head', 'dropseed_login_shake');
 
 // Modify default login error text
-add_filter('login_errors', create_function('$a', "return '<b>Error:</b> Invalid Username or Password';"));
+add_filter('login_errors', create_function('$a', "return '<b>Error:</b> Invalid username or password';"));

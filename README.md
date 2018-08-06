@@ -61,6 +61,10 @@ Dropseed Child Theme Starter is a simple starting point for the development of W
 6. In `/login/images/` replace `login-logo.svg` with your login logo.
 7. Enjoy!
 
+## Important
+
+An HTACCESS file has been intentionally excluded from the Dropseed Child Theme Starter. Requirements vary greatly and many, including myself, utilize the cascading nature of HTACCESS authority to include differing levels of security, accessibility, and more across personal or client subdirectories. However, it is strongly suggested that an HTACCESS file including minimum WordPress security changes and configurations is added to any installation thereof. To view, modify, and implement those security modifications I use across WordPress sites, download my HTACCESS starter by clicking here: [HTACCESS Starter](https://gist.github.com/ryanmroth/2a015dd8e883fd3f0a41f6a7ce1422b7)
+
 ## Contributing
 
 1. Fork it!
@@ -78,4 +82,5 @@ A big thank you to:
 
 ## License
 
-The Dropseed Child Theme Starter is licensed under the WTFPL license. For more information, see the LICENSE file in this repository.
+The Dropseed Child Theme Starter is licensed under the WTFPL license. For more
+information, see the LICENSE file in this repository.
