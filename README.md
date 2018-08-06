@@ -40,22 +40,24 @@ Dropseed Child Theme Starter is a simple starting point for the development of W
     ##### Original:
     ``` php
     $dropseed_includes = [
-      'lib/setup.php',    // Theme setup
-      'lib/cleanup.php',  // Clean up functions
-      'lib/login.php',    // Custom login page
-      'lib/dashboard.php',    // Customize dashboard
-      'lib/helpers.php',   // Useful helper functions
+      'lib/setup.php',      // Theme setup
+      'lib/cleanup.php',    // Clean up functions
+      'lib/security.php',    // Security related functions
+      'lib/login.php',      // Custom login page
+      'lib/dashboard.php',  // Customize dashboard
+      'lib/helpers.php',    // Useful helper functions
       'lib/favicons.php'   // Adding favicons
     ];
     ```
     ##### Modified:
     ``` php
     $dropseed_includes = [
-      'lib/setup.php',    // Theme setup
-      'lib/cleanup.php',  // Clean up functions
-      // 'lib/login.php',    // Custom login page
-      'lib/dashboard.php',    // Customize dashboard
-      'lib/helpers.php',   // Useful helper functions
+      'lib/setup.php',      // Theme setup
+      'lib/cleanup.php',    // Clean up functions
+      'lib/security.php',    // Security related functions
+      // 'lib/login.php',      // Custom login page
+      'lib/dashboard.php',  // Customize dashboard
+      'lib/helpers.php',    // Useful helper functions
       'lib/favicons.php'   // Adding favicons
     ];
     ```
