@@ -21,12 +21,6 @@ function dropseed_login_logo_url() {
 }
 add_filter( 'login_headerurl', 'dropseed_login_logo_url' );
 
-// Change the title text for the login logo
-function dropseed_login_logo_url_title() {
-	return 'Site Name & Info';
-}
-add_filter( 'login_headertitle', 'dropseed_login_logo_url_title' );
-
 // Remove login screen shake
 function dropseed_login_shake() {
 	remove_action('login_head', 'wp_shake_js', 12);
